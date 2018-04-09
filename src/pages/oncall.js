@@ -3,6 +3,9 @@ import Link from 'gatsby-link'
 
 const OnCall = () => (
     <div>
+        <div>
+            <img src={require('../img/bus_header.jpg')}/>
+        </div>
         <h1 className="header">On Call</h1>
         <p>"Olympic On Call" is a service being offered for the current school year
             (2017-2018). Morning and afternoon pick ups are being offered on an ala-carte

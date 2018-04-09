@@ -10,9 +10,9 @@
 }
 
 .logo {
-    height: auto;
+    height: 50px;
     width: auto;
-    max-height: 50px;
+    margin: 20px 0;
 }
 
 .nav_item > a {
@@ -24,4 +24,38 @@
     color: #2b3087;
     padding: 20px;
     padding-left: 0;
+    flex: 0 0 100%;
+}
+
+#map_of_stops {
+    height: 400px;
+    max-width: 400px;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .navbar div:not(:first-child) {display: none;}
+    .navbar div.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive div.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive div {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }
